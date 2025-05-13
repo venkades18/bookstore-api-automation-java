@@ -1,6 +1,6 @@
-package api;
+package com.bookstore.api;
 
-import constants.EndPoints;
+import com.bookstore.constants.EndPoints;
 import data.BookStoreData;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
