@@ -1,4 +1,4 @@
-package constants;
+package com.bookstore.constants;
 
 public class EndPoints {
 

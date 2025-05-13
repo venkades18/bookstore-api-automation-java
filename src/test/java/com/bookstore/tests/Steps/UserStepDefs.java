@@ -1,8 +1,8 @@
-package Steps;
+package com.bookstore.tests.Steps;
 
 	
-import api.UserApi;
-import data.BookStoreData;
+import com.bookstore.api.UserApi;
+import com.bookstore.utils.BookStoreData;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
