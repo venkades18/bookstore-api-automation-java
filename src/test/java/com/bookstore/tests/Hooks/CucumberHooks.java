@@ -1,4 +1,4 @@
-package Hooks;
+
 import io.cucumber.java.Before;
 
 import static io.restassured.RestAssured.baseURI;

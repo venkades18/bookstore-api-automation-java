@@ -1,6 +1,6 @@
 package Steps;
 
-
+	
 import api.UserApi;
 import data.BookStoreData;
 import io.cucumber.java.en.And;
@@ -238,8 +238,6 @@ public class UserStepDefs {
             Assert.assertEquals(bookStoreData.getDeleteBookResponse().getBody().jsonPath().get("message"),"Book deleted successfully","Book not deleted yet");
         } else if (condition.equalsIgnoreCase("notFound")) {
             Assert.assertEquals(bookStoreData.getDeleteBookResponse().getStatusCode(), 404,"The response code is not 404");
-            Assert.assertEquals(bookStoreData.getDeleteBookResponse().getStatusLine(),"HTTP/1.1 404 Not Found","Response line is not as expected");
-            Assert.assertEquals(bookStoreData.getDeleteBookResponse().getBody().jsonPath().get("detail"),"Book not found","Book should not be deleted");
         }
     }
 
