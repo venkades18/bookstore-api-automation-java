@@ -1,14 +1,10 @@
 package com.bookstore.api.Bookapi;
-import com.bookstore.api.Bookapi.AuthApi;
-import com.bookstore.api.Bookapi.BookApi;
-import com.bookstore.models.Book.Book;
-import com.bookstore.utils.ConfigManager;
+
+import com.bookstore.api.BooksApi;
+import com.bookstore.models.Book.BookApi;
 import com.bookstore.utils.TestDataGenerator;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import static org.hamcrest.Matchers.*;
 
 public class BookTests extends TestBase {
     private String authToken;
